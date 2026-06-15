@@ -1,0 +1,24 @@
+[
+  {
+    "id": "u_admin_001",
+    "username": "admin",
+    "passwordHash": "h_2f295e4df2b9cd9ed88f198a4b96eb694570997fd975c03974c8a0a5162b5d48",
+    "nickname": "平台管理员",
+    "role": "admin",
+    "permissions": [
+      "shop",
+      "take",
+      "design",
+      "admin",
+      "after"
+    ],
+    "securityQuestions": [
+      {
+        "question": "您的出生城市是？",
+        "answerHash": "33aec613519771b0db8d71f2635e294328ec3687c3d2e6b2d353b7be00f384d5"
+      }
+    ],
+    "balance": 0,
+    "createdAt": "2026-06-10T15:43:24"
+  }
+]
