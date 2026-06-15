@@ -1,0 +1,21 @@
+{
+  "_version": 0,
+  "_updatedAt": "2026-06-10T15:43:24",
+  "orders": [],
+  "afterSalesRequests": [],
+  "platformSettings": {},
+  "adminData": {
+    "subAccounts": [],
+    "withdrawRequests": [],
+    "totalWithdrawn": 0
+  },
+  "customProducts": [],
+  "disabledProductIds": [],
+  "coupons": [],
+  "feedbacks": [],
+  "announcements": [],
+  "moderationQueue": [],
+  "chatMessages": {},
+  "sampleFeedbacks": {},
+  "chatUnreadCounts": {}
+}
