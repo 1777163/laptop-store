@@ -792,42 +792,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // JOIN FORM HANDLER
   // ============================================
   window.handleJoinSubmit = function(event) {
-    event.preventDefault();
+    // 表单使用原生 action 提交到 formsubmit.co，这里只显示提交状态
     const form = event.target;
     const btn = form.querySelector('.join-form-submit');
-    const originalText = btn.innerHTML;
     btn.innerHTML = '提交中...';
     btn.disabled = true;
-    
-    // 发送到邮箱：https://formsubmit.co/17779127516@163.com
-    const formData = new FormData(form);
-    fetch('https://formsubmit.co/17779127516@163.com', {
-      method: 'POST',
-      body: formData
-    })
-    .then(response => {
-      if (response.ok) {
-        btn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> 提交成功，顾问将尽快联系您';
-        btn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
-        btn.style.borderColor = '#10b981';
-        form.reset();
-      } else {
-        throw new Error('发送失败');
-      }
-    })
-    .catch(() => {
-      btn.innerHTML = '提交失败，请重试';
-      btn.style.background = 'linear-gradient(135deg, #ef4444, #dc2626)';
-      btn.style.borderColor = '#ef4444';
-    })
-    .finally(() => {
-      setTimeout(() => {
-        btn.innerHTML = originalText;
-        btn.style.background = '';
-        btn.style.borderColor = '';
-        btn.disabled = false;
-      }, 3000);
-    });
+    // 表单会自然跳转到 thanks.html，JS 无需额外处理
   };
 
   // View all stores button
