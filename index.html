@@ -856,24 +856,28 @@
       <h3 class="join-form-title">立即咨询加盟</h3>
       <p class="join-form-desc">填写信息，招商顾问将在24小时内与您联系</p>
       <form class="join-form" id="joinForm" onsubmit="handleJoinSubmit(event)">
+        <!-- 表单配置 - 发送到邮箱 -->
+        <input type="hidden" name="_subject" value="樂聚娱乐 - 加盟咨询">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
         <div class="join-form-row">
           <div class="join-form-field">
             <label>您的姓名 <span>*</span></label>
-            <input type="text" placeholder="请输入姓名" required="">
+            <input type="text" name="name" placeholder="请输入姓名" required="">
           </div>
           <div class="join-form-field">
             <label>联系电话 <span>*</span></label>
-            <input type="tel" placeholder="请输入手机号" required="">
+            <input type="tel" name="phone" placeholder="请输入手机号" required="">
           </div>
         </div>
         <div class="join-form-row">
           <div class="join-form-field">
             <label>意向城市</label>
-            <input type="text" placeholder="请输入意向加盟城市">
+            <input type="text" name="city" placeholder="请输入意向加盟城市">
           </div>
           <div class="join-form-field">
             <label>意向品牌</label>
-            <select>
+            <select name="brand">
               <option value="">请选择品牌</option>
               <option value="leju">樂聚KTV</option>
               <option value="haolechao">豪樂巢KTV</option>
@@ -883,7 +887,7 @@
         </div>
         <div class="join-form-field join-form-field-full">
           <label>备注留言</label>
-          <textarea placeholder="如有其他需求或问题，欢迎留言..." rows="3"></textarea>
+          <textarea name="message" placeholder="如有其他需求或问题，欢迎留言..." rows="3"></textarea>
         </div>
         <button type="submit" class="btn btn-primary join-form-submit">
           提交咨询 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
