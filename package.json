@@ -1,0 +1,17 @@
+{
+  "name": "leju-entertainment",
+  "version": "1.0.0",
+  "description": "樂聚娱乐 - 让聚会更美好 | 娱乐产业运营与品牌孵化集团官网",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "python-server": "python server.py"
+  },
+  "keywords": ["樂聚娱乐", "KTV", "娱乐", "聚会"],
+  "author": "樂聚娱乐",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
